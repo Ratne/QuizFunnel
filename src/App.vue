@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+
+  <register-form v-if="registerShow"/>
+  <current-step-view v-else />
+
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import CurrentStepView from "./components/CurrentStepView";
+import RegisterForm from "./components/RegisterForm";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {RegisterForm, CurrentStepView},
+  computed: {
+    registerShow(){
+      return this.$store.getters.getRegisterShow
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

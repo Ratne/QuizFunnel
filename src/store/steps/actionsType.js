@@ -1,7 +1,9 @@
-const actions = {
-    setCurrentStep: (context, payload) => {
-        context.commit('SET_CURRENT_STEP', context.state.steps[payload])
-    },
+export default {
+    setCurrentStep: 'setCurrentStep',
+    addPoints: 'addPoints',
+    addAnswer: 'addAnswer',
+    addTag: 'addTag',
+    answerManagement: 'answerManagement',
+    setAnswerSteps: 'setAnswerSteps',
+    setRegisterShow: 'setRegisterShow'
 }
-
-export default actions

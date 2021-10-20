@@ -1,10 +1,10 @@
 const mutations = {
-    SET_ERRORS: (state, payload) =>  state.errors = payload,
-    RESET_ERRORS: (state) => state.errors = [],
-    ADD_ERROR: (state, payload) => state.errors = [...state.errors, payload] ,
-    REMOVE_ERROR: (state,payload) => state.errors = state.errors.filter(ele => {
-     return   ele.id !== payload.id;
-    })
+    SET_CURRENT_STEP: (state, payload) =>  state.currentStep = payload,
+    ADD_TAG: (state, payload) => state.tags = [...state.tags, payload],
+    ADD_ANSWER: (state, payload) => state.answers = [...state.answers, payload],
+    ADD_POINTS: (state, payload) => state.points = state.points + (+payload),
+    SET_NUMBER_STEPS: (state, payload) => state.numberSteps = payload,
+    SET_REGISTER_SHOW: (state, payload) => state.registerShow = payload
 }
 
 export default mutations;

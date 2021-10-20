@@ -1,12 +1,10 @@
 import { createStore } from 'vuex'
+import steps from "./steps";
+
+
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    steps: steps,
   }
 })

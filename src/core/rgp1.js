@@ -1,518 +1,243 @@
-export const steps = {
-    mgp1: {
-        "title": "Manicure e preparazione dell'unghia naturale",
-        "subtitle": "La manicure è un servizio sempre incluso nei tuoi servizi mani?",
+export const rgp1 = {
+    rgp1: {
+        "title": "Applicazione e gestione del servizio",
+        "subtitle": "Attualmente come esegui il servizio pedicure?",
         "answers":
             [
                 {
-                    "label": "si",
-                    "point": "3",
+                    "label": "Con strumentazioni classiche senza taglienti",
+                    "point": "6",
                     "tag": "",
-                    "go": "mgp2"
+                    "go": "rgp2"
                 },
                 {
-                    "label": "no",
+                    "label": "Con strumentazioni taglienti",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp2"
-                }              ,
-                {
-                    "label": "dipende dalle cuticole",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp2"
-                }
-            ]
-    },
-    mgp2: {
-        "title": "Manicure e preparazione dell'unghia naturale",
-        "subtitle": "Come scegli la manicure da eseguire alla cliente?",
-        "answers":
-            [
-                {
-                    "label": "In base al tipo di pelle",
-                    "point": "3",
-                    "tag": "",
-                    "go": "mgp3"
-                },
-                {
-                    "label": "In base al tempo",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp3"
-                }              ,
-                {
-                    "label": "In base alle richieste della cliente",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp3"
-                }
-            ]
-    },
-    mgp3: {
-        "title": "Manicure e preparazione dell'unghia naturale",
-        "subtitle": "Esegui, oltre alla manicure classica, anche la Baby Manicure?",
-        "answers":
-            [
-                {
-                    "label": "Si",
-                    "point": "2",
-                    "tag": "",
-                    "go": "mgp4"
-                },
-                {
-                    "label": "No",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp4"
-                }              ,
-                {
-                    "label": "No, ma mi piacerebbe",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp4"
-                }
-            ]
-    },
-    mgp4: {
-        "title": "Manicure e preparazione dell'unghia naturale",
-        "subtitle": "Come esegui la preparazione dell'unghia naturale?",
-        "answers":
-            [
-                {
-                    "label": "Dipende dal tipo di unghia",
-                    "point": "2",
-                    "tag": "",
-                    "go": "mgp5"
-                },
-                {
-                    "label": "Con lima di grana adeguata",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp5"
+                    "go": "rgp2"
                 }              ,
                 {
                     "label": "Con micromotore",
-                    "point": "0",
+                    "point": "13",
                     "tag": "",
-                    "go": "mgp5"
+                    "go": "rgp2"
                 }
             ]
     },
-    mgp5: {
-        "title": "Manicure e preparazione dell'unghia naturale",
-        "subtitle": "Utilizzi un micromotore aspirante per la manicure?",
+    rgp2: {
+        "title": "Applicazione e gestione del servizio",
+        "subtitle": "Sei a conoscenza del decreto interministeriale n.206 del 2015 relativo all'esclusione dei taglienti in estetica?",
         "answers":
             [
                 {
                     "label": "Si",
-                    "point": "2",
+                    "point": "13",
                     "tag": "",
-                    "go": "mgp6"
+                    "go": "rgp3"
                 },
                 {
                     "label": "No",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp6"
+                    "go": "rgp3"
+                }
+            ]
+    },
+    rgp3: {
+        "title": "Applicazione e gestione del servizio",
+        "subtitle": "Come tratti un'ipercheratosi importante?",
+        "answers":
+            [
+                {
+                    "label": "Con micromotore",
+                    "point": "10",
+                    "tag": "",
+                    "go": "rgp4"
+                },
+                {
+                    "label": "Con sgorbia",
+                    "point": "0",
+                    "tag": "",
+                    "go": "rgp4"
                 }              ,
                 {
-                    "label": "No, ma mi piacerebbe",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp6"
-                }
-            ]
-    },
-    mgp6: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "In che fase del servizio refill utilizzi il micromotore?",
-        "answers":
-            [
-                {
-                    "label": "Per la rimozione",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp7"
-                },
-                {
-                    "label": "Per rimozione e modellamento del nuovo gel applicato",
+                    "label": "Con cheratolitico",
                     "point": "3",
                     "tag": "",
-                    "go": "mgp7"
-                },
-                {
-                    "label": "Per la zona cuticole",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp7"
-                },
-                {
-                    "label": "Non lo utilizzo",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp7"
-                },
-            ]
-    },
-    mgp7: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "Su cosa ti basi per la scelta e l'utilizzo delle tue lime durante un servizio gel?",
-        "answers":
-            [
-                {
-                    "label": "In base alla grana con cui sono abituata",
-                    "point": "5",
-                    "tag": "",
-                    "go": "mgp8"
-                },
-                {
-                    "label": "In base al lavoro che devo fare",
-                    "point": "2",
-                    "tag": "",
-                    "go": "mgp8"
-                },
-                {
-                    "label": "Uso sempre la stessa tipologia di lima da anni",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp8"
+                    "go": "rgp4"
                 }
             ]
     },
-    mgp8: {
+    rgp4: {
         "title": "Applicazione e gestione del servizio",
-        "subtitle": "Quanto ci metti ad eseguire un servizio Gel da 0?",
+        "subtitle": "Con soggetti sensibili come persone diabetiche come gestisci la rimozione di un callo?",
         "answers":
             [
                 {
-                    "label": "Più di 2 ore e mezza",
+                    "label": "Con lama",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp9"
+                    "go": "rgp5"
                 },
                 {
-                    "label": "Da 2 Ore e mezza a 2 Ore",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp9"
-                },
-                {
-                    "label": "Da 1 ora e mezza a 1 ora e un quarto",
+                    "label": "Non lo rimuovo per evitare sanguinamento",
                     "point": "6",
                     "tag": "",
-                    "go": "mgp9"
+                    "go": "rgp5"
+                }              ,
+                {
+                    "label": "Con micromotore",
+                    "point": "13",
+                    "tag": "",
+                    "go": "rgp5"
+                }
+            ]
+    },
+    rgp5: {
+        "title": "Applicazione e gestione del servizio",
+        "subtitle": "Come termini solitamente il tuo servizio pedicure?",
+        "answers":
+            [
+                {
+                    "label": "Con crema finale",
+                    "point": "0",
+                    "tag": "",
+                    "go": "rgp6"
                 },
                 {
-                    "label": "Meno di 1 ora e un quarto",
+                    "label": "Con un rituale completo",
+                    "point": "6",
+                    "tag": "",
+                    "go": "rgp6"
+                }              ,
+                {
+                    "label": "Con crema e massaggio",
+                    "point": "3",
+                    "tag": "",
+                    "go": "rgp6"
+                }
+            ]
+    },
+    rgp6: {
+        "title": "Applicazione e gestione del servizio",
+        "subtitle": "Quanto ci metti ad eseguire un pedicure mediamente?",
+        "answers":
+            [
+                {
+                    "label": "1 ora e trenta",
+                    "point": "0",
+                    "tag": "",
+                    "go": "rgp7"
+                },
+                {
+                    "label": "1 ora",
+                    "point": "6",
+                    "tag": "",
+                    "go": "rgp7"
+                },
+                {
+                    "label": "30 Minuti",
                     "point": "10",
                     "tag": "",
-                    "go": "mgp9"
+                    "go": "rgp7"
                 }
             ]
     },
-    mgp9: {
+    rgp7: {
         "title": "Applicazione e gestione del servizio",
-        "subtitle": "Nel Refill, per rimuovere il gel, quanto tempo impieghi?",
+        "subtitle": "Quanto ritieni faticoso il servizio pedicure?",
         "answers":
             [
                 {
-                    "label": "5 Minuti",
-                    "point": "5",
-                    "tag": "",
-                    "go": "mgp10"
-                },
-                {
-                    "label": "10 Minuti",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp10"
-                },
-                {
-                    "label": "20 Minuti",
+                    "label": "Molto",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp10"
-                }
-            ]
-    },
-    mgp10: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "Quanto impieghi per eseguire la bombatura?",
-        "answers":
-            [
+                    "go": "rgp8"
+                },
                 {
-                    "label": "5 Minuti",
+                    "label": "Poco",
                     "point": "10",
                     "tag": "",
-                    "go": "mgp11"
+                    "go": "rgp8"
                 },
                 {
-                    "label": "10 Minuti",
-                    "point": "4",
-                    "tag": "",
-                    "go": "mgp11"
-                },
-                {
-                    "label": "20 Minuti",
+                    "label": "Moltissimo",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp11"
+                    "go": "rgp8"
                 }
             ]
     },
-    mgp11: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "Disponi di due lampade a postazione per effettuare i tuoi servizi mani?",
+    rgp8: {
+        "title": "Gestione del cliente",
+        "subtitle": "Ogni quanto eseguono il pedicure le tue clienti?",
         "answers":
             [
                 {
-                    "label": "Si",
-                    "point": "2",
-                    "tag": "",
-                    "go": "mgp12"
-                },
-                {
-                    "label": "No",
+                    "label": "Al bisogno",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp12"
-                }
-            ]
-    },
-    mgp12: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "Quanti pennelli utilizzi per eseguire un servizo gel?",
-        "answers":
-            [
-                {
-                    "label": "2",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp13"
+                    "go": "rgp9"
                 },
                 {
-                    "label": "4 o più",
-                    "point": "5",
+                    "label": "1 volta al mese",
+                    "point": "6",
                     "tag": "",
-                    "go": "mgp13"
+                    "go": "rgp9"
                 },
                 {
-                    "label": "1",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp13"
-                }
-            ]
-    },
-    mgp13: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "In base a cosa scegli la forma delle unghie che effettui durante il tuo servizio?",
-        "answers":
-            [
-                {
-                    "label": "In base alla richiesta della cliente",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp14"
-                },
-                {
-                    "label": "In base alla forma piu' in voga del momento",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp14"
-                },
-                {
-                    "label": "In base al tipo di unghia e lunghezza",
+                    "label": "1 volta ogni 2 mesi",
                     "point": "3",
                     "tag": "",
-                    "go": "mgp14"
+                    "go": "rgp9"
                 }
             ]
     },
-    mgp14: {
-        "title": "Applicazione e gestione del servizio",
-        "subtitle": "Esegui spesso riparazioni di unghie spezzate durante i tuoi refill? Clicca sulla media proposta",
-        "answers":
-            [
-                {
-                    "label": "3 Clienti su 5",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp15"
-                },
-                {
-                    "label": "Mai",
-                    "point": "3",
-                    "tag": "",
-                    "go": "mgp15"
-                },
-                {
-                    "label": "1 Cliente su 5",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp15"
-                }
-            ]
-    },
-    mgp15: {
+    rgp9: {
         "title": "Gestione del cliente",
-        "subtitle": "Come scegli il servizio da fare alla cliente?",
-        "answers":
-            [
-                {
-                    "label": "In base alla tua consulenza",
-                    "point": "3",
-                    "tag": "",
-                    "go": "mgp16"
-                },
-                {
-                    "label": "In base alla richiesta della cliente",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp16"
-                },
-                {
-                    "label": "In base alla proposta economica",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp16"
-                }
-            ]
-    },
-    mgp16: {
-        "title": "Gestione del cliente",
-        "subtitle": "Esegui una consulenza alle tue clienti per proporre il servizio o scegliere i prodotti da utilizzare?",
-        "answers":
-            [
-                {
-                    "label": "No",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp17"
-                },
-                {
-                    "label": "Si",
-                    "point": "5",
-                    "tag": "",
-                    "go": "mgp17"
-                },
-                {
-                    "label": "A volte",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp17"
-                }
-            ]
-    },
-    mgp17: {
-        "title": "Gestione del cliente",
-        "subtitle": "Per ogni tua cliente che esegue un servizio nails, hai una scheda per appuntare tutte le informazioni necessarie?",
-        "answers":
-            [
-                {
-                    "label": "Si",
-                    "point": "3",
-                    "tag": "",
-                    "go": "mgp18"
-                },
-                {
-                    "label": "No",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp18"
-                }
-            ]
-    },
-    mgp18: {
-        "title": "Gestione del cliente",
-        "subtitle": "Ogni quanto eseguono mediamente i refill le tue clienti?",
-        "answers":
-            [
-                {
-                    "label": "Ogni 4 Settimane",
-                    "point": "1",
-                    "tag": "",
-                    "go": "mgp19"
-                },
-                {
-                    "label": "Dipende dalla richiesta",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp19"
-                },
-                {
-                    "label": "Ogni 3 settimane",
-                    "point": "5",
-                    "tag": "",
-                    "go": "mgp19"
-                }
-            ]
-    },
-    mgp19: {
-        "title": "Gestione del cliente",
-        "subtitle": "Gli appuntamenti di refill delle tue clienti come vengono programmati?",
+        "subtitle": "Ogni quanto eseguono il pedicure le tue clienti?",
         "answers":
             [
                 {
                     "label": "Do loro appuntamento di volta in volta",
                     "point": "3",
                     "tag": "",
-                    "go": "mgp20"
+                    "go": "rgp10"
                 },
                 {
                     "label": "Mi chiamano loro al bisogno",
                     "point": "0",
                     "tag": "",
-                    "go": "mgp20"
+                    "go": "rgp10"
                 },
                 {
-                    "label": "Fisso loro gli appuntamenti seguenti per almeno 3/4 mesi a seguire",
-                    "point": "5",
+                    "label": "Fisso gli appuntamenti seguenti per almeno i prossimi 2 mesi",
+                    "point": "6",
                     "tag": "",
-                    "go": "mgp20"
+                    "go": "rgp10"
                 }
             ]
     },
-    mgp20: {
+    rgp10: {
         "title": "Gestione del cliente",
-        "subtitle": "Consigli alle tue clienti prodotti per mantenere curate le mani e le unghie?",
+        "subtitle": "Se una tua cliente presenta delle ipercheratosi importanti, come ti comporti?",
         "answers":
             [
                 {
-                    "label": "Si",
-                    "point": "2",
-                    "tag": "",
-                    "go": "mgp21"
-                },
-                {
-                    "label": "No",
-                    "point": "0",
-                    "tag": "",
-                    "go": "mgp21"
-                }
-            ]
-    },
-    mgp21: {
-        "title": "Gestione del cliente",
-        "subtitle": "Ogni quanto fai un aggiornamento formativo per il mondo Nails?",
-        "answers":
-            [
-                {
-                    "label": "Ogni anno o meno",
-                    "point": "5",
+                    "label": "Effettuo una consulenza mirata e cerco di consigliare prodotti di autocura domiciliare e appuntamen ti fissati in centro",
+                    "point": "13",
                     "tag": "",
                     "go": ""
                 },
                 {
-                    "label": "Quando escono delle novità",
-                    "point": "3",
+                    "label": "Scadenzio appuntamenti mirati in centro",
+                    "point": "7",
                     "tag": "",
                     "go": ""
                 },
                 {
-                    "label": "Ogni 3 anni",
-                    "point": "0",
+                    "label": "Consiglio prodotti di acutocura domiciliare e dopo un mese fisso l'appuntamento",
+                    "point": "1",
                     "tag": "",
                     "go": ""
                 }
