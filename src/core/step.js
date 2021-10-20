@@ -8,18 +8,18 @@ import {sgp1} from "./sgp1";
 
 export const steps = {
     gp: {
-        "title": "gestione della postazione",
-        "subtitle": "Hai un tavolo/postazione esclusivo per effettuare il servizio mani?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "si",
+                    "label": "Answer 1",
                     "point": "3",
                     "tag": "",
                     "go": "gp2"
                 },
                 {
-                    "label": "no",
+                    "label": "Answer 2",
                     "point": "1",
                     "tag": "",
                     "go": "gp2"
@@ -27,18 +27,18 @@ export const steps = {
             ]
     },
     gp2: {
-        "title": "gestione della postazione",
-        "subtitle": "Il lavoro che esegui è sempre possibile effettuarlo da seduta oppure devi alzarti e recuperare materiale?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "Sempre da seduta",
+                    "label": "Answer 1",
                     "point": "1",
                     "tag": "",
                     "go": "gp3"
                 },
                 {
-                    "label": "Devo alzarmi",
+                    "label": "Answer",
                     "point": "0",
                     "tag": "",
                     "go": "gp3"
@@ -46,18 +46,18 @@ export const steps = {
             ]
     },
     gp3: {
-        "title": "gestione della postazione",
-        "subtitle": "La postazione la utilizzi solo tu oppure la utilizzano anche le tue colleghe?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "Solo io",
+                    "label": "Answer 1",
                     "point": "1",
                     "tag": "",
                     "go": "gp4"
                 },
                 {
-                    "label": "Altre colleghe",
+                    "label": "Answer 2",
                     "point": "0",
                     "tag": "",
                     "go": "gp4"
@@ -65,18 +65,18 @@ export const steps = {
             ]
     },
     gp4: {
-        "title": "gestione della postazione",
-        "subtitle": "La tua postazione è confortevole e ti dà la garanzia di lavorare in sicurezza e di avere il giusto benessere(lavorare con poca polvere, seduta confortevole, strumentazione adeguata e disposta in modo corretto)?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "Si",
+                    "label": "Answer 1",
                     "point": "2",
                     "tag": "",
                     "go": "gp5"
                 },
                 {
-                    "label": "No",
+                    "label": "Answer 2",
                     "point": "0",
                     "tag": "",
                     "go": "gp5"
@@ -84,24 +84,24 @@ export const steps = {
             ]
     },
     gp5: {
-        "title": "gestione della postazione",
-        "subtitle": "Le tue attrezzature hanno tutti i certificati europei come norme di conformità e sono corretti per lavorare in sicurezza?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "Si",
+                    "label": "Answer 1",
                     "point": "3",
                     "tag": "",
                     "go": "gp6"
                 },
                 {
-                    "label": "No",
+                    "label": "Answer 2",
                     "point": "0",
                     "tag": "",
                     "go": "gp6"
                 },
                 {
-                    "label": "Non lo so",
+                    "label": "Answer 3",
                     "point": "1",
                     "tag": "",
                     "go": "gp6"
@@ -109,48 +109,48 @@ export const steps = {
             ]
     },
     gp6: {
-        "title": "gestione della postazione",
-        "subtitle": "Quali sono i servizi che esegui nel tuo istituto?",
+        "title": "Headline",
+        "subtitle": "Question",
         "answers":
             [
                 {
-                    "label": "Solo Gel",
+                    "label": "Answer 1",
                     "point": "0",
                     "tag": "",
                     "go": "mgp1"
                 },
                 {
-                    "label": "Solo Semipermanente",
+                    "label": "Answer 2",
                     "point": "0",
                     "tag": "",
                     "go": "ngp1"
                 },
                 {
-                    "label": "Gel e semipermanente",
+                    "label": "Answer 3",
                     "point": "0",
                     "tag": "",
                     "go": "ogp1"
                 },
                 {
-                    "label": "Geli, semi e pedicure",
+                    "label": "Answer 4",
                     "point": "0",
                     "tag": "",
                     "go": "pgp1"
                 },
                 {
-                    "label": "Solo pedicure",
+                    "label": "Answer 5",
                     "point": "0",
                     "tag": "",
                     "go": "qgp1"
                 },
                 {
-                    "label": "Gel e pedicure",
+                    "label": "Answer 6",
                     "point": "0",
                     "tag": "",
                     "go": "rgp1"
                 },
                 {
-                    "label": "Semi e pedicure",
+                    "label": "Answer 7",
                     "point": "0",
                     "tag": "",
                     "go": "sgp1"

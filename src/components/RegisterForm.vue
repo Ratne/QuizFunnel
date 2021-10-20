@@ -3,16 +3,13 @@
     <div class="form-group mt-2 mb-2">
           <div class="contentQuiz">
             <div class="quizQuestions">
-              <h1>Hai quasi finito!</h1>
-              <h4>Inserisci i tuoi dati per avere i risultati del test</h4>
+              <h1>Headline</h1>
+              <h4>Subheadline</h4>
             </div>
             <form @submit.prevent="submitForm">
             <FormGroupCustom :error="errors['name']" v-model:value="user.name" placeholder="Nome" type="text"></FormGroupCustom>
             <FormGroupCustom :error="errors['email']" v-model:value="user.email" placeholder="Email" type="text"></FormGroupCustom>
-            <FormGroupCustom :error="errors['phone']" v-model:value="user.phone" placeholder="Telefono" type="text"></FormGroupCustom>
-            <FormGroupCustom :error="errors['role']" v-model:value="user.role" placeholder="Ruolo Centro" type="text"></FormGroupCustom>
-            <FormGroupCustom :error="errors['centro']" v-model:value="user.centro" placeholder="Nome Centro" type="text"></FormGroupCustom>
-            <button class="submitQuiz" type="submit"><span>INVIA E VEDI IL RISULTATO DEL TEST</span></button>
+            <button class="submitQuiz" type="submit"><span>SEND</span></button>
             </form>
 
           </div>
@@ -37,21 +34,6 @@ export default {
           validation: {
             type: validationTypeName.required,}
         },
-        {
-          name: 'centro',
-          validation: {
-            type: validationTypeName.required,}
-        },
-        // {
-        //   name: 'role',
-        //   validation: {
-        //     type: validationTypeName.required,}
-        // },
-        // {
-        //   name: 'phone',
-        //   validation: {
-        //     type: validationTypeName.required,}
-        // },
         {
           name: 'email',
           validation: {
@@ -84,7 +66,7 @@ export default {
            points,
            tags: this.$store.getters.getTags,
          }
-         fetch('https://hook.integromat.com/1i0a9qdn59afqp4dg17tcy67oebno23o',
+         fetch('https://URL.com',
              { headers: {
                  'Content-Type': 'application/json'
                }, method:'POST' ,body: JSON.stringify(data)}).then(res =>{
@@ -100,7 +82,7 @@ export default {
              return points > ele.min && points < ele.max
             })
 
-           window.location.href = url.url;
+           window.top.location.href = url.url;
 
 
 

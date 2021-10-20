@@ -1,6 +1,6 @@
 <template>
 <div class="parent">
-  <p class="textBar">{{parseInt(getPerc)}}% COMPLETATO</p>
+  <p class="textBar">{{parseInt(getPerc)}}% COMPLETED</p>
   <div class="barContainer">
     <div :style="{width: getPerc + '%'}" class="child"></div>
     <div :style="{width: 100 - getPerc + '%'}" class="empty"></div>
