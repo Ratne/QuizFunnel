@@ -72,10 +72,10 @@ export default {
                }, method:'POST' ,body: JSON.stringify(data)}).then(res =>{
 
            const point = [
-             {max: 69, min:0, url: 'https://www.pnquiz.com/esito-punteggio-1/'},
-             {max: 84, min:70, url: 'https://www.pnquiz.com/esito-punteggio-2/'},
-             {max: 94, min:85, url: 'https://www.pnquiz.com/esito-punteggio-3/'},
-             {max: 1000, min:95, url: 'https://www.pnquiz.com/esito-punteggio-4/'}
+             {max: 69, min:0, url: 'https://redirect1.com/'},
+             {max: 84, min:70, url: 'https://redirect2.com/'},
+             {max: 94, min:85, url: 'https://redirect3.com/'},
+             {max: 1000, min:95, url: 'https://redirect4.com/'}
 
            ]
             const url = point.find(ele => {

@@ -28,6 +28,7 @@ npm run build
 - Setup how many questions before of segmentations in src/core/step.js "numberInit" value
 - Setup all the question in src/core/*
 - Setup the webhook endpoint in src/components/RegisterForm.vue line 69
+- Setup redirect in src/components/RegisterForm.vue line 74 based on points
 
 ## Styles
 - Setup the form style in src/components/RegisterForm.vue
