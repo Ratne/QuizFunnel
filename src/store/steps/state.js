@@ -7,6 +7,7 @@ const listTot = Object.keys(steps).filter(step => {
 const answersStep = steps[listTot].answers.map(ele => ele.go);
 const getNumber = (currentStep, number, callback) => {
     const n = number + 1;
+    console.log(currentStep.answers[0])
     if (currentStep.answers[0].go){
         getNumber(steps[currentStep.answers[0].go], n, callback)
     }
